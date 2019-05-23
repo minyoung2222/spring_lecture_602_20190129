@@ -8,8 +8,8 @@
 	
 	<bean id="dataSource" 
 	      class="org.apache.commons.dbcp2.BasicDataSource"
-		  p:driverClassName="oracle.jdbc.driver.OracleDriver"
-		  p:url="jdbc:oracle:thin:@localhost:1521:XE"
+		  p:driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+		  p:url="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE"
 		  p:username="java"
 		  p:password="java"
 		  />
