@@ -22,6 +22,16 @@
 		  p:session-ref="sqlSession"
 		  p:instance-ref="mybatisBoardDAO"
 		  />
+		 
+	<bean id="pdsDAO"
+	      class="com.spring.dao.PdsDAOImpl"
+	      p:session-ref="sqlSession"
+	      />
+	      
+	<bean id="replyDAO"
+		  class="com.spring.dao.ReplyDAOImpl"
+		  p:session-ref="sqlSession"
+		  />
 </beans>
 
 
