@@ -12,12 +12,6 @@ import com.spring.request.PageMaker;
 
 public class ReplyServiceImpl implements ReplyService{
 	
-	private static ReplyServiceImpl instance=new ReplyServiceImpl();
-	private ReplyServiceImpl() {}
-	public static ReplyServiceImpl getInstance() {
-		return instance;
-	}
-	
 	private ReplyDAO replyDAO;
 	public void setReplyDAO(ReplyDAO replyDAO){
 		this.replyDAO=replyDAO;

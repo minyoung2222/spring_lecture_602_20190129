@@ -5,25 +5,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.spring.dao.PageBoardDAO;
 import com.spring.dao.ReplyDAO;
 import com.spring.dto.BoardVO;
 import com.spring.request.Criteria;
 import com.spring.request.PageMaker;
 
+//@Service("boardService")
 public class BoardServiceImpl implements BoardService {
-	private static BoardServiceImpl instance=new BoardServiceImpl();
-	private BoardServiceImpl() {}
-	public static BoardServiceImpl getInstance() {
-		return instance;
-	}
 	
-	
+	//@Autowired
 	private PageBoardDAO boardDAO;
 	public void setBoardDAO(PageBoardDAO boardDAO) {
 		this.boardDAO=boardDAO;
 	}
 	
+	//@Autowired
 	private ReplyDAO replyDAO;
 	public void setReplyDAO(ReplyDAO replyDAO) {
 		this.replyDAO = replyDAO;

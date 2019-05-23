@@ -13,12 +13,6 @@ import com.spring.request.Criteria;
 import com.spring.request.PageMaker;
 
 public class PdsServiceImpl implements PdsService {
-	private static PdsServiceImpl instance=
-			new PdsServiceImpl();
-	private PdsServiceImpl() {}
-	public static PdsServiceImpl getInstance() {
-		return instance;
-	}
 	
 	
 	private PdsDAO pdsDAO;

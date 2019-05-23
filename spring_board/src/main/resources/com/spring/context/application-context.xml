@@ -32,6 +32,25 @@
 		  class="com.spring.dao.ReplyDAOImpl"
 		  p:session-ref="sqlSession"
 		  />
+	
+	<bean id="boardService"
+	      class="com.spring.service.BoardServiceImpl"
+	      p:boardDAO-ref="pageMybatisBoardDAO"
+	      p:replyDAO-ref="replyDAO"
+	      />
+	<bean id="memberService"
+	      class="com.spring.service.MemberServiceImpl"
+	      p:memberDAO-ref="memberDAO"
+	      />
+	<bean id="pdsService"
+		  class="com.spring.service.PdsServiceImpl"
+		  p:attachDAO-ref="attachDAO"
+		  p:pdsDAO-ref="pdsDAO"
+		  />
+	<bean id="replyService"
+	      class="com.spring.service.ReplyServiceImpl"
+	      p:replyDAO-ref="replyDAO"
+	      />
 </beans>
 
 
